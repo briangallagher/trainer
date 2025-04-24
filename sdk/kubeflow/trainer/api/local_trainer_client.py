@@ -145,6 +145,7 @@ class LocalTrainerClient(AbstractTrainerClient):
         )
 
     def delete_job(self, name: str):
+        print("Deleting job: ", name)
         self.job_runner.delete_job(job_name=name)
 
     def __list_runtime_crs(self) -> List[models.TrainerV1alpha1ClusterTrainingRuntime]:

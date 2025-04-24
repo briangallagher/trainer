@@ -126,6 +126,9 @@ CONTAINER_TRAIN_JOB_NAME_LABEL = "trainer.kubeflow.org/train-job-name"
 # The label key used to associate container resources with a runtime.
 CONTAINER_RUNTIME_LABEL = "trainer.kubeflow.org/runtime"
 
+# The label key used to associate docker resources with a train job name.
+PODMAN_TRAIN_JOB_NAME_LABEL = "trainer.kubeflow.org/podman-train-job-name"
+
 # The prefix given to names used for local train jobs.
 LOCAL_TRAIN_JOB_NAME_PREFIX = "kubeflow-trainer-"
 
